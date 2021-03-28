@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Chango', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.right-container{
+
+    background-color: white;
+    padding: 1rem;
+    padding-top: 0;
+ 
+}
+
+.right-subContainer{
+    
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    
+}
+
+.right-subContainer input{
+
+    margin-top: .5rem;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    
+}
+
+.tittleRightSubContainer{
+
+    background-color: lightgray;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.textareass{
+
+    margin-top: .5rem;
+    padding-left: 1rem;
+    color: darkgray;
+}
+
+.right-subContainer select{
+
+    margin-top: .5rem;
+    padding-left: 1rem;
+    color: darkgray;
+    font-size: 1.2rem;
+}
+
+.right-subContainer button{
+
+    margin-top: .5rem;
+    background-color: lightcoral;
+    padding: .5rem;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    font-weight: 600;
+    outline:none;
+}
+
+#deletButton{
+
+    background-color: darkgray;
+    padding: .2rem;
+}
