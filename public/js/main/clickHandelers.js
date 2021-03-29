@@ -1,5 +1,6 @@
 import {updateDasBoard} from './updateMainDashBoard.js'
 import {enviarDaylyData} from '../enviardatosAlServidor.js'
+import {updateDailyInfoBanner} from './updateDailyInfo.js'
 
 
 export function litenToChnagesInListSubContainers(e,info){
@@ -74,12 +75,16 @@ function saveButton(info,id,idName){
         info[id-1].client.nombreDeLugar = nodes.nombreUnidad.value
         info[id-1].client.apt = nodes.apt.value
         info[id-1].client.nombre = nodes.nombreCliente.value
-        info[id-1].costo = nodes.costoDomicilio.value
+        info[id-1].costo = parseInt(nodes.costoDomicilio.value)
         info[id-1].domiciliario.name = nodes.domiciliariosLista.value
         info[id-1].notas = nodes.notasDomicilio.value
-        info[id-1].pedidoDetalles = nodes.pedidoText
+        info[id-1].pedidoDetalles = nodes.pedidoText.value
+        info[id-1].total = parseInt(nodes.pagoEnEfectivo.value)
+
+        console.log(info)
 
         enviarDaylyData(info)
+        updateDailyInfoBanner(info)
        
    })
 
