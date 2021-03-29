@@ -46,7 +46,7 @@
 }
 .status{
 
-    background-color: #184d47;
+
     height: 100%;
     width: 8rem;
     display: flex;
@@ -69,6 +69,7 @@
     justify-content: space-between;
     font-size: 1.3rem;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .iteamLeft{
@@ -117,9 +118,17 @@
 
 .statusEntrega{
 
-    background-color: #ef4f4f;
+
     border-left: 2px solid #edf6f9;
     color: #f1f1f1;
     cursor: pointer;
     
+}
+
+.greenBox{
+    background-color: #184d47;
+}
+
+.redBox{
+    background-color: #ef4f4f;
 }

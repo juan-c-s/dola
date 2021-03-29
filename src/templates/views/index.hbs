@@ -32,7 +32,7 @@
 
             </div>
 
-           <div class="liscontainer">
+           <div class="liscontainer" id="liscontainerId">
 
                 <div class="itemContainer">
                     <p class="status">Entregado</p>
@@ -85,23 +85,22 @@
                 <div class="tittleRightSubContainer">
                     Direccion 
                 </div>
-                <input type="text" name="direccion" id="" placeholder="direccion" >
-                <input type="text" name="nombreUnidad" id="" placeholder="nombre Unidad">
-                <input type="text" name="apt" id="" placeholder="apt">
-                <input type="text" name="NombreCliente" placeholder="NombreCliente">
-                <input type="text" name="NombreCliente" placeholder="pago en efectivo">
-                <input type="text" name="costoDomicilio" placeholder="costo domicilio">
+                <input type="text" name="NombreCliente" id="nombreCliente" placeholder="NombreCliente">
+                <input type="text" name="direccion" id="direccion" placeholder="direccion" >
+                <input type="text" name="nombreUnidad" id="nombreUnidad" placeholder="nombre Unidad">
+                <input type="text" name="apt" id="apt" placeholder="apt">
+                <input type="text" name="tipo de pago" id="pagoEnEfectivo" placeholder="pago en efectivo">
+                <input type="text" name="costoDomicilio" id="costoDomicilio" placeholder="costo domicilio">
 
-                <select name="domiciliarios" id="domiciliarios">
-                    <option value="todos">todos</option>
+                <select name="domiciliarios" id="domiciliariosLista">
                     <option value="jhon">jhon</option>
                     <option value="juan">juan</option>
                     <option value="favian">favian</option>
                     <option value="alejo">alejo</option>
                 </select>
-                <textarea rows="4" cols="50" class="textareass" placeholder="notas">notas</textarea>
-                <textarea rows="4" cols="50" class="textareass" placeholder="pedido">pedido</textarea>
-                <button >Save</button>
+                <textarea rows="4" cols="50"  id="notasDomicilio" class="textareass" placeholder="notas">notas</textarea>
+                <textarea rows="4" cols="50" id="pedidoText" class="textareass" placeholder="pedido">pedido</textarea>
+                <button id="SaveButon" >Save</button>
                 <button id="deletButton">Delet</button>
 
             </div>
