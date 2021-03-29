@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {{>head}}
+
+<body>
+
+    {{>header}}
+
+    {{>subheader}}
+
+    <div class="dashBoard">
+
+        <div class="leftContainer makeitmain">
+
+            <div class="dalyInfoContainer">
+
+                <div class="dailysubContainer">
+                    <p class="dailySmallText">costo domicilios</p>
+                    <p class="dailyBigText">$67,000</p>
+                </div>
+
+                <div class="dailysubContainer">
+                    <p class="dailySmallText">dinero pagado</p>
+                    <p class="dailyBigText">$67,000</p>
+                </div>
+
+                <div class="dailysubContainer">
+                    <p class="dailySmallText"># domicilios</p>
+                    <p class="dailyBigText">5</p>
+                </div>
+
+            </div>
+
+            <div class="liscontainer">
+
+                <div class="itemContainer">
+                    <p class="status">Pagado</p>
+                    <p class="status statusEntrega" >Cobrado</p>
+
+                    <div class="itemcontainer-sub">
+                        <div class="iteamLeft">
+                            
+                            <p>$60,000</p>
+                            <p>0:56</p>
+                  
+                        </div>
+                        
+                        <div class="iteamRight">
+                            <p>juan domicilios</p>
+                            
+                            <p>#001</p>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="itemContainer">
+                        <p class="status">Pagado</p>
+                        <p class="status statusEntrega" >Cobrado</p>
+                        
+
+                        <div class="itemcontainer-sub">
+                            <div class="iteamLeft">
+
+                            <p>$60,000</p>
+                            <p>0:56</p>
+                  
+                            
+              
+                            </div>
+                                
+                            <div class="iteamRight">
+                                <p>juan domicilios</p>
+                                <p>#002</p>
+                            </div>
+                        </div>
+                </div>
+                
+           </div>
+
+        </div>
+
+        <div class="right-container">
+
+            <div class="right-subContainer">
+
+                <div class="tittleRightSubContainer">
+                    Filtra informacion
+                </div>
+      
+                <input type="date" name="fecha" >
+
+                <select name="domiciliarios" id="domiciliarios">
+                    <option value="todos">todos</option>
+                    <option value="jhon">jhon</option>
+                    <option value="juan">juan</option>
+                    <option value="favian">favian</option>
+                    <option value="alejo">alejo</option>
+                </select>
+ 
+                <button >buscar</button>
+
+            </div>
+
+            <div class="right-subContainer">
+
+                <div class="tittleRightSubContainer">
+                    Direccion 
+                </div>
+                <input type="text" name="direccion" id="" placeholder="direccion" >
+                <input type="text" name="nombreUnidad" id="" placeholder="nombre Unidad">
+                <input type="text" name="apt" id="" placeholder="apt">
+                <input type="text" name="NombreCliente" placeholder="NombreCliente">
+                <input type="text" name="NombreCliente" placeholder="pago en efectivo">
+                <input type="text" name="costoDomicilio" placeholder="costo domicilio">
+
+                <select name="domiciliarios" id="domiciliarios">
+                    <option value="todos">todos</option>
+                    <option value="jhon">jhon</option>
+                    <option value="juan">juan</option>
+                    <option value="favian">favian</option>
+                    <option value="alejo">alejo</option>
+                </select>
+                <textarea rows="4" cols="50" class="textareass" placeholder="notas">notas</textarea>
+                <textarea rows="4" cols="50" class="textareass" placeholder="pedido">pedido</textarea>
+                <button >Save</button>
+                <button id="deletButton">Delet</button>
+
+            </div>
+
+        </div>
+
+    </div>
+ 
+</body>
+</html>

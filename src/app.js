@@ -19,11 +19,30 @@ app.set("views", pathToViews);
 hbs.registerPartials(pathToPartials);
 
 
-app.get("", (req, res) => {
-    res.render("Main", {
+app.get("/", (req, res) => {
+    res.render("", {
         title: "main page",
     })
 })
+
+app.get("/domiciliarios", (req, res) => {
+    res.render("indexDomiciliarios", {
+        title: "main page",
+    })
+})
+
+app.get("/hacerpedido", (req, res) => {
+    res.render("indexHacerPedido", {
+        title: "main page",
+    })
+})
+
+app.get("/historial", (req, res) => {
+    res.render("indexHistorial", {
+        title: "main page",
+    })
+})
+
 app.listen(port, () => {
-    console.log("sirvió el servidor");
+    console.log("sirvió el servidor: " + port);
 })

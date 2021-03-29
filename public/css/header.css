@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Chango', cursive;
+    font-family: 'Nunito', sans-serif;;
+}
+
+.header{
+
+    display: flex;
+    background-color: #edf6f9;
+    height: 2rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    color: #14213d;
+
+
+}
+
+.logo{
+
+    font-family: 'Chango', cursive;
+    font-size: 2rem;
+
+}
+
+.headerLeftContainer{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: .1rem;
+    border-bottom: 2px #83c5be;
+   
+}
+
+.headerLeftContainer p{
+
+    margin-right: 1rem;
+
+}
+
+.headerLeftContainer button{
+    
+    background-color: #83c5be;
+    color: #14213d;
+    padding: .5rem;
+    font-weight: 800;
+    border: 2px solid #006d77;
+    border-radius: 5px;
+    
+}

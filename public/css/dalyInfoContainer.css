@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Chango', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dalyInfoContainer{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+   
+}
+
+.dailysubContainer{
+    
+    background-color: lightcyan;
+    display: flex;
+    align-items: center;
+    background-color: #edf6f9;
+    padding-left: 1rem;
+    border-radius: 5px;
+  
+   
+}
+
+.dailyBigText{
+
+    font-size: 2rem;
+    margin-left: 1rem;
+    font-weight: 300;
+    height: 100%;
+    background-color: #83c5be;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+  
+
+}
+
+.dailySmallText{
+
+    height: 100%;
+}
