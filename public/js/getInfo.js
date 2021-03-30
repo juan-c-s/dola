@@ -63,4 +63,24 @@ export function getInfoToday(){
     }
 }
 
+export function getInfoDomiciliarios(){
+
+    //esta funcion llama al servidor y le pide la lista de todos los domiciliarios que le pertenecen al usuario 
+    return {
+        domiciliarios : [
+            {
+                name : "favian",
+                cell : 3175126894 
+            },
+            {
+                name : "juan",
+                cell : 3217000120 
+            },
+            {
+                name : "Alejando danilo",
+                cell : 3217000765
+            }
+        ]
+    }
+}
 

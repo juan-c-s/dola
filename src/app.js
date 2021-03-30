@@ -19,13 +19,15 @@ const pathToViews = path.join(__dirname, "/templates/views");
 const publicPath = path.join(__dirname, "../public");
 
 app.use(express.static(publicPath));
-app.use(express.json())
+
+app.use(express.json());
+app.use(express.urlencoded({ extended : false}));
 
 // routers 
-app.use(mainRouter)
-app.use(historialRouter)
-app.use(hacerPedidoRouter)
-app.use(domiciliariosRouter)
+app.use(mainRouter);
+app.use(historialRouter);
+app.use(hacerPedidoRouter);
+app.use(domiciliariosRouter);
 
 app.set('view engine', 'hbs');
 app.set("views", pathToViews);

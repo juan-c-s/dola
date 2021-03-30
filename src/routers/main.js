@@ -9,6 +9,11 @@ router.get("/main", (req, res) => {
     })
 })
 
+router.post('/dailyInfo',(req,res)=>{
+    console.log(req.body)
+    res.status('201')
+})
+
 
 
 

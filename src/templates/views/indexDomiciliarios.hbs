@@ -12,11 +12,10 @@
 
         <div class="leftContainer">
 
-            <div class="liscontainer">
+            <div class="liscontainer" id="containerOfDomiciliariosEntry">
 
                 <div class="itemContainer">
-                    <p class="status">Activo</p>
-
+                   
                     <div class="itemcontainer-sub">
                        
                         
@@ -27,9 +26,6 @@
                     </div>
                 
                 </div>
-
-
- 
 
            </div>
 
@@ -43,10 +39,10 @@
                     Añade Domiciliario
                 </div>
 
-                <input type="text" name="direccion" id="" placeholder="nombre" >
-                <input type="tel" name="nombreUnidad" id="" placeholder="cellular">
-                <button >Save</button>
-                <button id="deletButton">Delet</button>
+                <input type="text" name="direccion" id="nombreDomiciliario" placeholder="nombre" required>
+                <input type="tel" name="nombreUnidad" id="cellularDomiciliario" placeholder="cellular"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"required>
+                <button id="añadirDomiciliarioButton">Save</button>
+                <!--<button id="deletButton">Delet</button>-->
 
             </div>
         
@@ -57,4 +53,6 @@
 
   
 </body>
+
+<script type="module" src="/js/domiciliarios/main.js"></script>
 </html>
