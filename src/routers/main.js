@@ -3,7 +3,7 @@ const router = express.Router();
 
 
 
-router.get("/main", (req, res) => {
+router.get("", (req, res) => {
     res.render("", {
         title: "main page",
     })
