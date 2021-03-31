@@ -4,17 +4,12 @@ const router = express.Router();
 
 
 router.get("/main", (req, res) => {
-    res.render("", {
-        title: "main page",
-    })
+    res.render("")
 })
 
-router.post('/dailyInfo',(req,res)=>{
-    console.log(req.body)
-    res.status('201')
+router.get("/login",(req,res)=>{
+    res.render("logIn")
 })
-
-
 
 
 module.exports = router;

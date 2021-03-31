@@ -3,6 +3,10 @@ const path = require('path');
 const hbs = require('hbs');
 const { Router } = require('express');
 
+//data Base Models sin terminar 
+require('./db/db')
+
+
 // routers 
 const mainRouter = require('./routers/main')
 const hacerPedidoRouter = require('./routers/hacerPedido')
