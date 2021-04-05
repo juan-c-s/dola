@@ -4,7 +4,7 @@ const hbs = require('hbs');
 const { Router } = require('express');
 
 //data Base Models sin terminar 
-require('./db/db')
+require('./db/mongoose')
 
 
 // routers 
@@ -25,7 +25,7 @@ const publicPath = path.join(__dirname, "../public");
 app.use(express.static(publicPath));
 
 app.use(express.json());
-app.use(express.urlencoded({ extended : false}));
+app.use(express.urlencoded({ extended: false }));
 
 // routers 
 app.use(mainRouter);

@@ -1,14 +1,14 @@
-import {CurrencyConverter} from '../globalUsfulFunctions.js'
+import { CurrencyConverter } from '../globalUsfulFunctions.js'
 
-export function updateDailyInfoBanner(domisList){
+export function updateDailyInfoBanner(domisList) {
 
     const costoDomiciliosHoy = document.getElementById('costoDomiciliosHoy');
     const dineroPagadoADomicliariosHoy = document.getElementById('dineroPagadoADomicliariosHoy');
     const numeroDeDomiciosHoy = document.getElementById('numeroDeDomiciosHoy');
 
-    const countTotalConstoDomis = ()=>{
+    const countTotalConstoDomis = () => {
         let totalCounter = 0;
-        domisList.forEach((domicilio)=>{
+        domisList.forEach((domicilio) => {
             totalCounter += domicilio.costo;
         })
 
@@ -16,9 +16,9 @@ export function updateDailyInfoBanner(domisList){
 
     }
 
-    const countTotalDineroPagado = ()=>{
+    const countTotalDineroPagado = () => {
         let totalCounter = 0;
-        domisList.forEach((domicilio)=>{
+        domisList.forEach((domicilio) => {
             totalCounter += domicilio.total
         })
 
@@ -26,8 +26,8 @@ export function updateDailyInfoBanner(domisList){
 
     }
 
-    const countTotalDomicilios = ()=>{
-        return domisList.length 
+    const countTotalDomicilios = () => {
+        return domisList.length
     }
 
     costoDomiciliosHoy.innerHTML = countTotalConstoDomis();
