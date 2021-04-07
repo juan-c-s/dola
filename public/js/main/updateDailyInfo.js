@@ -1,7 +1,7 @@
 import { CurrencyConverter } from '../globalUsfulFunctions.js'
 
 export function updateDailyInfoBanner(domisList) {
-
+    console.log(domisList)
     const costoDomiciliosHoy = document.getElementById('costoDomiciliosHoy');
     const dineroPagadoADomicliariosHoy = document.getElementById('dineroPagadoADomicliariosHoy');
     const numeroDeDomiciosHoy = document.getElementById('numeroDeDomiciosHoy');

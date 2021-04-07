@@ -1,14 +1,14 @@
-export function updateDomicil(info){
+export function updateDomicil(info) {
     populateDomiciliariosList(info)
 }
 
-function populateDomiciliariosList(info){
+async function populateDomiciliariosList(info) {
     let finalHTL = ``
     let contador = 0;
 
-    for(let domiciliario of info){
+    for (let domiciliario of info) {
         contador++;
-        finalHTL = finalHTL + createDomiciliarioEntry(domiciliario,contador)
+        finalHTL = finalHTL + createDomiciliarioEntry(domiciliario, contador)
     }
 
     document.getElementById('containerOfDomiciliariosEntry').innerHTML = finalHTL;
@@ -16,7 +16,7 @@ function populateDomiciliariosList(info){
 }
 
 
-function createDomiciliarioEntry(domiciliario,contador){
+function createDomiciliarioEntry(domiciliario, contador) {
 
     return `  
     <div class="itemContainer">

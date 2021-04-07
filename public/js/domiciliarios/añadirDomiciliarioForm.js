@@ -1,25 +1,26 @@
-import {enviarNewDomiciliario} from '../enviardatosAlServidor.js'
-import {updateDomicil} from './updateMainDashboard.js'
+import { enviarNewDomiciliario } from '../enviardatosAlServidor.js'
+import { updateDomicil } from './updateMainDashboard.js'
 
 
-export function añadirDomiciliarioForm(info){
-    
+export function añadirDomiciliarioForm(info) {
+
     const domiciliarioName = document.getElementById('nombreDomiciliario').value.trim()
     const domiciliarioCell = parseInt(document.getElementById('cellularDomiciliario').value.trim())
 
 
-    if(isNaN(domiciliarioCell)){
+    if (isNaN(domiciliarioCell)) {
         alert("porfavor ingrese in cellular valido. EJEMPLO: 3175126893")
-    }else{
+    } else {
         window.confirm(domiciliarioName + " | " + domiciliarioCell + " añadido a tu lista de domiciliarios")
         let newDomiciliario = {
-            name : domiciliarioName,
-            cell : domiciliarioCell
+            name: domiciliarioName,
+            cell: domiciliarioCell
         }
-        
+
         enviarNewDomiciliario(newDomiciliario)
+        console.log(newDomiciliario)
         info.push(newDomiciliario)
-        
+
         updateDomicil(info)
     }
 

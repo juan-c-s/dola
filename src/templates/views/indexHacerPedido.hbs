@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    {{>head}}
+{{>head}}
 
 <body>
 
@@ -13,46 +13,46 @@
 
         <div class="leftContainer">
 
-            <div class="liscontainer">
+            <div class="liscontainer" id="idListHacerPedido">
 
                 <div class="itemContainer">
 
                     <div class="itemcontainer-sub">
-                
-                        
+
+
                         <div class="iteamRight">
                             <p>Lucas rey</p>
                             <p>#055</p>
                         </div>
                     </div>
-                
+
                 </div>
 
                 <div class="itemContainer">
 
-                        <div class="itemcontainer-sub">
-                     
-                            <div class="iteamRight">
-                                <p>miguel gonzales</p>
-                                <p>#043</p>
-                            </div>
+                    <div class="itemcontainer-sub">
+
+                        <div class="iteamRight">
+                            <p>miguel gonzales</p>
+                            <p>#043</p>
                         </div>
+                    </div>
 
                 </div>
 
             </div>
-        
+
         </div>
 
-    <div class="right-container">
+        <div class="right-container">
 
-        <div class="right-subContainer">
+            <div class="right-subContainer">
 
-            <div class="tittleRightSubContainer">
-                    Direccion 
+                <div class="tittleRightSubContainer">
+                    Direccion
                 </div>
                 <input type="text" name="NombreCliente" placeholder="NombreCliente">
-                <input type="text" name="direccion" id="" placeholder="direccion" >
+                <input type="text" name="direccion" id="" placeholder="direccion">
                 <input type="text" name="nombreUnidad" id="" placeholder="nombre Unidad">
                 <input type="text" name="apt" id="" placeholder="apt">
                 <input type="text" name="NombreCliente" placeholder="pago en efectivo">
@@ -68,14 +68,16 @@
 
                 <textarea rows="4" cols="50" class="textareass" placeholder="notas">notas</textarea>
                 <textarea rows="4" cols="50" class="textareass" placeholder="pedido">pedido</textarea>
-                <button >Save</button>
+                <button id="sendButton">Enviar</button>
                 <button id="deletButton">Delet</button>
-   
+
             </div>
 
         </div>
 
     </div>
+    <script type="module" src="/js/hacerPedido/main.js"></script>
 
 </body>
+
 </html>

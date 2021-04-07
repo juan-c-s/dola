@@ -5,8 +5,7 @@ require('../db/mongoose')
 const Client = require('../db/models/Client')
 const Pedido = require('../db/models/Pedido')
 
-const app = express()
-app.use(express.json())
+
 router.get("/hacerpedido", (req, res) => {
     res.render("indexHacerPedido", {
         title: "main page",
@@ -32,6 +31,12 @@ router.post('/hacerpedido', (req, res) => {
     pedido1.save().then(pedido => {
         console.log("PEDIDO: " + pedido)
     }).catch(err => console.log("ERR " + err))
+})
+
+router.get('/clientes', (req, res) => {
+    Client.find().then(response => {
+        res.send(response);
+    }).catch(err => res.status(500).send(err))
 })
 
 module.exports = router;

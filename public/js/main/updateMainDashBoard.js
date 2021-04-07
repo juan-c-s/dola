@@ -1,19 +1,18 @@
-import {CurrencyConverter,convertMinsToHrsMins} from '../globalUsfulFunctions.js'
+import { CurrencyConverter, convertMinsToHrsMins } from '../globalUsfulFunctions.js'
 
-export function updateDasBoard(domicilios){
+export function updateDasBoard(domicilios) {
 
 
     let finalElemt = ``
     let contador = 0;
     let listIteamsContainer = document.getElementById('liscontainerId');
     const htmlLineIteam = getLineitemhtml(domicilios)
-    
 
-    const makeLineIteamsList = ()=>{
-        domicilios.forEach((domicilio)=>{
+    const makeLineIteamsList = () => {
+        domicilios.forEach((domicilio) => {
             contador++;
-            finalElemt  = finalElemt + getLineitemhtml(domicilio,domicilio.domiciliario.name,contador)
-        
+            finalElemt = finalElemt + getLineitemhtml(domicilio, domicilio.domiciliario.name, contador)
+
         })
     }
     makeLineIteamsList()
@@ -22,15 +21,15 @@ export function updateDasBoard(domicilios){
 
 }
 
-function getLineitemhtml(domicilio,domiciliario,id){
+function getLineitemhtml(domicilio, domiciliario, id) {
 
-  
 
-    return  `
+
+    return `
     <div class="itemContainer" id="${id}">
-        <p class="status ${(domicilio.entregado)?("greenBox"):("redBox")}" id="infoEntregado">Entregado</p>
-        <p class="status statusEntrega ${(domicilio.pagado)?("greenBox"):("redBox")}" id="infoPagado">Pagado</p>
-        <p class="status statusEntrega ${(domicilio.cobrado)?("greenBox"):("redBox")}" id="infoCobrado">Cobrado</p>
+        <p class="status ${(domicilio.entregado) ? ("greenBox") : ("redBox")}" id="infoEntregado">Entregado</p>
+        <p class="status statusEntrega ${(domicilio.pagado) ? ("greenBox") : ("redBox")}" id="infoPagado">Pagado</p>
+        <p class="status statusEntrega ${(domicilio.cobrado) ? ("greenBox") : ("redBox")}" id="infoCobrado">Cobrado</p>
         <div class="itemcontainer-sub">
             <div class="iteamLeft">
 
