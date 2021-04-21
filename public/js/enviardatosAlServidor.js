@@ -1,5 +1,6 @@
 
-
+import { updateDashBoard } from './hacerPedido/updateMainDashboard.js'
+import { getInfoClients } from './getInfo.js'
 export function enviarDaylyData(info) {
     //aqui va el codigo que envia info al servidor
     // fetch("/hacerPedido", {
@@ -24,4 +25,21 @@ export async function enviarNewDomiciliario(data) {
     }).then(response => {
         console.log(response)
     })
+}
+export function mandarPedidoCreadoAlServidor(data) {
+    fetch("/crearPedido", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    }).then(response => {
+        console.log(response);
+        getInfoClients().then(resp => {
+            updateDashBoard(resp)
+        }).catch(err => console.log(err))
+    }).catch(err => console.log(err))
+}
+export function mandarPedidoCreadoAWhatsapp(data) {
+
 }

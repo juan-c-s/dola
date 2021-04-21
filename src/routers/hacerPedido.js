@@ -12,7 +12,7 @@ router.get("/hacerpedido", (req, res) => {
     })
 })
 
-router.post('/hacerpedido', (req, res) => {
+router.post('/crearPedido', (req, res) => {
     const pedido = req.body
 
     Client.findOne({ nombre: pedido.client.nombre }).then((clien) => {

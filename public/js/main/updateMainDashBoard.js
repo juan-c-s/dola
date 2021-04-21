@@ -23,7 +23,9 @@ export function updateDasBoard(domicilios) {
 
 function getLineitemhtml(domicilio, domiciliario, id) {
 
-
+    // console.log(domicilio.createdAt instanceof Date)
+    // console.log("Date" + Date())
+    //Definir Date
 
     return `
     <div class="itemContainer" id="${id}">
@@ -33,8 +35,8 @@ function getLineitemhtml(domicilio, domiciliario, id) {
         <div class="itemcontainer-sub">
             <div class="iteamLeft">
 
-                <p>${CurrencyConverter(domicilio.total)}</p>
-                <p>${convertMinsToHrsMins(domicilio.duracion)}</p>
+                <p>${CurrencyConverter(domicilio.efectivo)}</p>
+                <p>${convertMinsToHrsMins(domicilio.createdAt)}</p>
 
             </div>
             

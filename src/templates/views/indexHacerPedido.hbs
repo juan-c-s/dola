@@ -51,12 +51,12 @@
                 <div class="tittleRightSubContainer">
                     Direccion
                 </div>
-                <input type="text" name="NombreCliente" placeholder="NombreCliente">
-                <input type="text" name="direccion" id="" placeholder="direccion">
-                <input type="text" name="nombreUnidad" id="" placeholder="nombre Unidad">
-                <input type="text" name="apt" id="" placeholder="apt">
-                <input type="text" name="NombreCliente" placeholder="pago en efectivo">
-                <input type="text" name="costoDomicilio" placeholder="costo domicilio">
+                <input type="text" name="NombreCliente" id="nombreCliente" placeholder="NombreCliente">
+                <input type="text" name="direccion" id="direccion" placeholder="direccion">
+                <input type="text" name="nombreUnidad" id="nombreUnidad" placeholder="nombre Unidad">
+                <input type="text" name="apt" id="apt" placeholder="apt">
+                <input type="text" name="NombreCliente" id="pagoEnEfectivo" placeholder="pago en efectivo">
+                <input type="text" name="costoDomicilio" id="costoDomicilio" placeholder="costo domicilio">
 
                 <select name="domiciliarios" id="domiciliarios">
                     <option value="todos">todos</option>
@@ -66,10 +66,10 @@
                     <option value="alejo">alejo</option>
                 </select>
 
-                <textarea rows="4" cols="50" class="textareass" placeholder="notas">notas</textarea>
-                <textarea rows="4" cols="50" class="textareass" placeholder="pedido">pedido</textarea>
+                <textarea rows="4" cols="50" class="textareass" id="notasDomicilio" placeholder="notas"></textarea>
+                <textarea rows="4" cols="50" class="textareass" id="pedidoText" placeholder="pedido"></textarea>
                 <button id="sendButton">Enviar</button>
-                <button id="deletButton">Delet</button>
+                <button id="deletButton">Delete</button>
 
             </div>
 

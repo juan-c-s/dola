@@ -80,7 +80,6 @@ function updateDaylyInfoData(info, id, idName) {
 function updateRightContainer(info, id, idName) {
 
     const nodes = readRightConainerInputNodes()
-
     nodes.direccion.value = info[id - 1].client.direccion
     nodes.nombreUnidad.value = info[id - 1].client.nombreDeLugar
     nodes.apt.value = info[id - 1].client.apt
@@ -89,9 +88,7 @@ function updateRightContainer(info, id, idName) {
     nodes.domiciliariosLista.value = info[id - 1].domiciliario.name
     nodes.notasDomicilio.value = info[id - 1].notas
     nodes.pedidoText.value = info[id - 1].pedidoDetalles
-    nodes.pagoEnEfectivo.value = info[id - 1].total
-
-
+    nodes.pagoEnEfectivo.value = info[id - 1].efectivo
 }
 
 function saveButton(info, id, idName) {

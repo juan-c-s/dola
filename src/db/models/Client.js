@@ -22,7 +22,9 @@ const Client = mongoose.model('Cliente', {
     },
     apt: {
         type: Number,
-    }
+    },
+
+
 
 })
 module.exports = Client

@@ -33,7 +33,7 @@ const pedidoSchema = new mongoose.Schema({
         require: true
     },
     efectivo: {
-        type: Boolean,
+        type: Number,
         default: false,
     },
     costo: {

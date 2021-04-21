@@ -19,7 +19,8 @@ export function updateDailyInfoBanner(domisList) {
     const countTotalDineroPagado = () => {
         let totalCounter = 0;
         domisList.forEach((domicilio) => {
-            totalCounter += domicilio.total
+            totalCounter += domicilio.efectivo
+
         })
 
         return CurrencyConverter(totalCounter)
